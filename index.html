@@ -10,38 +10,53 @@
 <body>
 
     <!--Barra de Navegaci[on]-->  
-    <nav class="navbar navbar-expand-lg bg-secondary ">
-        <div class="container-fluid  ">
-          <a class="navbar-brand text-white " href="#">Lorem Ipsum</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
-              </li>
+   <nav class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Lorem Ipsum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--Primer search visible en todas menos en none-->
+      <form class="d-lg-none me-2 mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+<!--Elementos nav-->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-white-50" >Pepito</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-white-50" >Sultano</a>
+        </li>
+      </ul>
+    
+
+<!--Barra de Search visible en lg-->
+      <div class="d-none d-lg-block">
+        <form class="mb-2" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+</div>
         
-              <li class="nav-item">
-                <a class="nav-link disabled text-white " aria-disabled="true">Disabled</a>
-              </li>
+        <a class="nav-link d-lg-none text-white-50" data-bs-toggle="collapse" href="#opciones" aria-expanded="true" aria-controls="opciones">
+  Opciones
+</a>
+         
+</div>
 
-              <li class="nav-item">
-                <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </div>
-        </div>
-      </nav>
-
-
-      <!--header-->
-      <div class="container text-center my-4">
+   </div>
+ 
+</nav>
+        <!--header-->
+      <div class="container text-center my-4 d-none  d-lg-block">
        
-      <h2 class="text-center col-12 " > Frases motivacionales </h2>
+      <h2 class="text-center col-12 d-none  d-lg-block" > Frases motivacionales </h2>
 
       <!--carrousel de textos-->
 
@@ -68,43 +83,44 @@
 
       </div>
 
-            <!--Lista de opciones a la izquierda-->\
-            <div class="row d-flex justify-content-center  ">
-            <ul class="list-group  col-2 ">
+      
+
+            <!--Lista de opciones a la izquierda-->
+            <div class="row d-flex justify-content-center collapse show" id="list-group">
+             
+              <ul class="list-group col-lg-2 d-lg-block collapse" id="opciones">
                 <li class="list-group-item">
                     <a href="#" class="text-black">Opcion 1</a></li>
                 <li class="list-group-item"><a href="#" class="text-black">Opcion 2</a></li></li>
                 <li class="list-group-item"><a href="#" class="text-black">Opcion 3</a></li></li>
                 <li class="list-group-item"><a href="#" class="text-black">Opcion 4</a></li></li>
               </ul>
+              
             
 
             <!--primer seccion de texto con 3 columnas y fondo gris-->
             <div class="container  col-8 row " >
-                <p class="col-4 bg-body-tertiary mb-3">La felicidad es una elección diaria que todos podemos hacer. No se trata solo de momentos de alegría, sino de encontrar gratitud en lo cotidiano y apreciar las pequeñas cosas que nos rodean.</p>
-                <p class="col-4 bg-body-tertiary mb-3">Las frases motivacionales nos recuerdan que nuestra actitud puede transformar nuestra perspectiva. "La felicidad no es algo hecho, viene de tus propias acciones", nos invita a tomar el control de nuestras vidas.</p>
-                <p class="col-4 bg-body-tertiary mb-3">Cada día es una nueva oportunidad para buscar lo que nos hace felices. No cuentes los días, haz que los días cuenten, y disfruta cada instante como una bendición.</p>
+                <p class="col-lg-4 col-md-6  bg-body-tertiary mb-3">La felicidad es una elección diaria que todos podemos hacer. No se trata solo de momentos de alegría, sino de encontrar gratitud en lo cotidiano y apreciar las pequeñas cosas que nos rodean.</p>
+                <p class="col-lg-4 col-md-6 bg-body-tertiary mb-3">Las frases motivacionales nos recuerdan que nuestra actitud puede transformar nuestra perspectiva. "La felicidad no es algo hecho, viene de tus propias acciones", nos invita a tomar el control de nuestras vidas.</p>
+                <p class="col-lg-4 col-md-6 bg-body-tertiary mb-3">Cada día es una nueva oportunidad para buscar lo que nos hace felices. No cuentes los días, haz que los días cuenten, y disfruta cada instante como una bendición.</p>
 
 
                
 
-                    <p class="col-4 bg-body-tertiary mb-3">La felicidad es una elección diaria que todos podemos hacer. No se trata solo de momentos de alegría, sino de encontrar gratitud en lo cotidiano y apreciar las pequeñas cosas que nos rodean.</p>
-                    <p class="col-4 bg-body-tertiary mb-3">Las frases motivacionales nos recuerdan que nuestra actitud puede transformar nuestra perspectiva. "La felicidad no es algo hecho, viene de tus propias acciones", nos invita a tomar el control de nuestras vidas.</p>
-                    <p class="col-4 bg-body-tertiary mb-3">Cada día es una nueva oportunidad para buscar lo que nos hace felices. No cuentes los días, haz que los días cuenten, y disfruta cada instante como una bendición.</p>
+                    <p class="col-lg-4 col-md-6  bg-body-tertiary mb-3">La felicidad es una elección diaria que todos podemos hacer. No se trata solo de momentos de alegría, sino de encontrar gratitud en lo cotidiano y apreciar las pequeñas cosas que nos rodean.</p>
+                    <p class="col-lg-4 col-md-6 bg-body-tertiary mb-3">Las frases motivacionales nos recuerdan que nuestra actitud puede transformar nuestra perspectiva. "La felicidad no es algo hecho, viene de tus propias acciones", nos invita a tomar el control de nuestras vidas.</p>
+                    <p class="col-lg-4 col-md-6 bg-body-tertiary mb-3">Cada día es una nueva oportunidad para buscar lo que nos hace felices. No cuentes los días, haz que los días cuenten, y disfruta cada instante como una bendición.</p>
 
 
-                    <p class="col-4 bg-body-tertiary mb-3">La felicidad se encuentra en los momentos sencillos. Aprender a disfrutar de una taza de café por la mañana o de una charla con un amigo puede marcar la diferencia en nuestro día.</p>
-                    <p class="col-4 bg-body-tertiary mb-3">Las frases motivacionales nos inspiran a vivir con propósito. "La felicidad no depende de lo que tienes, sino de cómo te sientes", nos recuerda que la verdadera alegría proviene de nuestro interior.</p>
-                    <p class="col-4 bg-body-tertiary mb-3">Cada día es una nueva oportunidad para crear recuerdos y disfrutar de la vida. Recuerda que no se trata solo de alcanzar metas, sino de disfrutar el camino y aprender de cada experiencia.</p>
+                    <p class="col-lg-4 col-md-6 bg-body-tertiary mb-3">La felicidad se encuentra en los momentos sencillos. Aprender a disfrutar de una taza de café por la mañana o de una charla con un amigo puede marcar la diferencia en nuestro día.</p>
+                    <p class="col-lg-4 col-md-6 bg-body-tertiary mb-3">Las frases motivacionales nos inspiran a vivir con propósito. "La felicidad no depende de lo que tienes, sino de cómo te sientes", nos recuerda que la verdadera alegría proviene de nuestro interior.</p>
+                    <p class="col-lg-4 col-md-6 bg-body-tertiary mb-3">Cada día es una nueva oportunidad para crear recuerdos y disfrutar de la vida. Recuerda que no se trata solo de alcanzar metas, sino de disfrutar el camino y aprender de cada experiencia.</p>
                 
         </div>
 
 
 
 </body>
-
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
